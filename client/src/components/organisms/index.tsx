@@ -18,3 +18,5 @@ export { default as HistoryBackground } from 'components/organisms/HistoryBackgr
 export { default as TaskCard } from 'components/organisms/TaskCard';
 export { default as HistoryHeader } from 'components/organisms/HistoryHeader';
 export { default as UserInProgressList } from 'components/organisms/UserInProgressList';
+export { default as DoneTaskChart } from 'components/organisms/DoneTaskChart';
+export { default as PriorityChart } from 'components/organisms/PriorityChart';
