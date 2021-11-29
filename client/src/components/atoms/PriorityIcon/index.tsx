@@ -7,7 +7,7 @@ interface IProps {
 }
 
 const StyledIconImg = styled.img`
-  background-color: ${(props) => props.theme.color.white};
+  background-color: #eeeeee;
   padding: 0.1rem;
   border-radius: 1rem;
 `;
