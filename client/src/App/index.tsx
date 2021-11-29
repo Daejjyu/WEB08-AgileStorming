@@ -7,6 +7,7 @@ import { Toast } from 'components/atoms';
 import loadable from '@loadable/component';
 import { Spinner } from 'components/molecules';
 import { TPageComponent } from 'types/page';
+import { Header } from 'components/organisms';
 
 interface IProps {
   page: TPageComponent;
@@ -22,6 +23,7 @@ const App = () => {
     <ThemeProvider theme={common}>
       <RecoilRoot>
         <Global styles={global} />
+        <Header />
         <Switch>
           <Route path='/' exact render={() => <AsyncPage page={'Login'} />} />
           <Route path='/project' render={() => <AsyncPage page={'Project'} />} />
@@ -31,7 +33,6 @@ const App = () => {
           <Route path='/calendar/:projectId' render={() => <AsyncPage page={'Calendar'} />} />
           <Route path='/chart/:projectId' render={() => <AsyncPage page={'Chart'} />} />
           <Route path='/backlog/:projectId' render={() => <AsyncPage page={'Backlog'} />} />
-
           <Redirect from='*' to='/' />
         </Switch>
         <GlobalModal />
